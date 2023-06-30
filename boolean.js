@@ -21,3 +21,21 @@ console.log(`hasPermission(false, true) should be false: ${hasPermission(false, 
 // Question 3: Write a JavaScript function called hasUniqueCharacters that takes a
 // string as an argument and returns true if all characters in the string are unique and
 // false otherwise.
+
+// This solution assumes that the string is case-sensitive and that spaces adn special characters are allowed
+// If spaces are not allowed, use string.replace(/\s/g, '') to remove all spaces and if case is not important, 
+// use string.toLowerCase() to convert the string to lowercase before splitting the string into an array and checking for uniqueness
+
+const hasUniqueCharacters = (string) => {
+    // convert string to array, sort array, compare adjacent elements
+    const sortedArray = string.split('').sort();
+    for (let i = 0; i < sortedArray.length - 1; i++)
+        if (sortedArray[i] === sortedArray[i + 1])
+            return false;
+            
+    return true;
+};
+
+console.log(`hasUniqueCharacters('Steven') should be false: ${hasUniqueCharacters('Steven')}`);
+console.log(`hasUniqueCharacters('banana') should be false: ${hasUniqueCharacters('banana')}`);
+console.log(`hasUniqueCharacters('asdfghijklmno') should be true: ${hasUniqueCharacters('asdfghijklmno')}`);
