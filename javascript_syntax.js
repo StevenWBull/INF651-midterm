@@ -8,9 +8,8 @@ console.log(number + 5);
 // Question 2: Write a JavaScript function called isEven that takes a number as an argument
 // and returns true if the number is even and false if it is odd.
 
-const isEven = (number) => {
-    return number % 2 === 0;
-};
+const isEven = (number) => number % 2 === 0;
+
 console.log(`isEven(4) should be true: ${isEven(4)}`);
 console.log(`isEven(5) should be false: ${isEven(5)}`);
 

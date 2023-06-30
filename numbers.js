@@ -1,7 +1,7 @@
 // Question 1: Calculate the square root of a given number and store the result in a
 // variable called result.
 
-let result = Math.sqrt(4);
+const result = Math.sqrt(4);
 console.log(`The square root of 4 is ${result}`);
 
 // Question 2: Write a JavaScript function called isPrime that takes a number as an
@@ -22,6 +22,7 @@ const isPrime = (number) => {
     }
     return true;
 };
+
 console.log(`isPrime(1) should be false: ${isPrime(1)}`);
 console.log(`isPrime(2) should be true: ${isPrime(2)}`);
 console.log(`isPrime(3) should be true: ${isPrime(3)}`);
@@ -34,8 +35,6 @@ console.log(`isPrime(6) should be false: ${isPrime(6)}`);
 // min and max
 
 // Assuming here that the min and max should be inclusive and that only integers are allowed
-const generateRandomNumber = (min, max) => {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-};
+const generateRandomNumber = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
 console.log(`generateRandomNumber(1, 4) should be between 1 and 4: ${generateRandomNumber(1, 4)}`);

@@ -2,7 +2,7 @@
 // choice. Then, display a message that says "Hello, [name]!" using the value of the
 // name variable.
 
-let name = 'Steven';
+const name = 'Steven';
 
 console.log(`Hello, ${name}!`);
 // or in browser alert(`Hello, ${name}!`);
