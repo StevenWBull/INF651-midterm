@@ -37,4 +37,4 @@ console.log(`isPrime(6) should be false: ${isPrime(6)}`);
 // Assuming here that the min and max should be inclusive and that only integers are allowed
 const generateRandomNumber = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
-console.log(`generateRandomNumber(1, 4) should be between 1 and 4: ${generateRandomNumber(1, 4)}`);
+console.log(`generateRandomNumber(1, 4) should be between 1 and 4 (inclusive): ${generateRandomNumber(1, 4)}`);

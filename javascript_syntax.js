@@ -17,6 +17,7 @@ console.log(`isEven(5) should be false: ${isEven(5)}`);
 // argument and returns true if it is a palindrome (reads the same forwards and backwards)
 // and false otherwise.
 
+// my implementation is case sensitive, if case insensitive is desired, use string.toLowerCase() before comparing
 const isPalindrome = (string) => {
     // convert string to array, reverse array, convert array to string, compare to original string
     return string === string.split('').reverse().join('');

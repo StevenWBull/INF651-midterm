@@ -5,7 +5,7 @@
 const name = 'Steven';
 
 console.log(`Hello, ${name}!`);
-// or in browser alert(`Hello, ${name}!`);
+// or in browser alert(`Hello, ${name}!`); node doesn't have access to alert
 
 // Question 2: Create two variables, x, and y, and assign them numerical values.
 // Swap the x and y values using a third variable and display the updated values.

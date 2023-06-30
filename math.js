@@ -15,6 +15,7 @@ console.log(`calculateFactorial(1) should be 1: ${calculateFactorial(1)}`);
 console.log(`calculateFactorial(2) should be 2: ${calculateFactorial(2)}`);
 console.log(`calculateFactorial(3) should be 6: ${calculateFactorial(3)}`);
 console.log(`calculateFactorial(4) should be 24: ${calculateFactorial(4)}`);
+console.log(`calculateFactorial(10) should be 3628800: ${calculateFactorial(10)}`);
 
 // Question 3: Write a JavaScript function called calculatePower that takes two
 // numbers, base and exponent, as arguments and returns the result of base raised to

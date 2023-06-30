@@ -6,7 +6,7 @@ while (i <= 20) {
     i++;
 };
 
-// o Question 2: Write a JavaScript function called calculateSum that takes a positive
+// Question 2: Write a JavaScript function called calculateSum that takes a positive
 // integer n as an argument and returns the sum of all numbers from 1 to n.
 
 const calculateSum = (n) => {
@@ -17,11 +17,16 @@ const calculateSum = (n) => {
     return sum;
 };
 
+/* 
+    You could also use the formula for the sum of an arithmetic series here n * (n + 1) / 2
+    const calculateSum = (n) => n * (n + 1) / 2;
+*/
+
 console.log(`calculateSum(1) should be 1: ${calculateSum(1)}`);
 console.log(`calculateSum(2) should be 3: ${calculateSum(2)}`);
 console.log(`calculateSum(3) should be 6: ${calculateSum(3)}`);
 
-// o Question 3: Write a JavaScript function called calculateFactorialIterative that
+// Question 3: Write a JavaScript function called calculateFactorialIterative that
 // takes a positive integer n as an argument and calculates its factorial using a loop
 // instead of recursion.
 

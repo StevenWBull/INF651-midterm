@@ -26,6 +26,6 @@ console.log(`getDiscount(200) should be 180 (10%): ${getDiscount(200)}`);
 
 const year = 2020;
 if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0)
-    console.log(`${year} is a leap year`);
+    console.log(`Leap year`);
 else
-    console.log(`${year} is not a leap year`);
+    console.log(`Not a leap year`);

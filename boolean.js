@@ -1,11 +1,10 @@
 // Question 1: Write a condition that checks whether a variable isRaining is true and
 // a variable isSunny is false. Store the result in a variable called shouldStayInside.
 
-const isRaining = true;
-const isSunny = false;
+let isRaining = true;
+let isSunny = false;
 
 const shouldStayInside = isRaining && !isSunny;
-
 console.log(`shouldStayInside should be true: ${shouldStayInside}`);
 
 // Question 2: Write a JavaScript function called hasPermission that takes two
@@ -32,7 +31,7 @@ const hasUniqueCharacters = (string) => {
     for (let i = 0; i < sortedArray.length - 1; i++)
         if (sortedArray[i] === sortedArray[i + 1])
             return false;
-            
+
     return true;
 };
 
